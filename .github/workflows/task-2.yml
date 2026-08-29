@@ -1,0 +1,15 @@
+name: second-workflow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "dir-1/**"
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-1-from second workflow
+        run: echo "Hello second flow!"
