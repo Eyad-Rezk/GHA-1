@@ -1,4 +1,4 @@
-name: second-workflow
+name: 2nd-workflow
 
 on:
   push:
@@ -11,5 +11,9 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: step-1-from second workflow
-        run: echo "Hello second flow!"
+      - name: linux commands
+        run: |
+           ls -a
+           pwd
+           whoami
+           echo "finished"
