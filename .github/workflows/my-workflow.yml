@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: step-1
-        uses: ./actions/cat
+        uses: ./.github/actions/action-1
         with:
           username: "Eyad Rezk"
           age: "23"
