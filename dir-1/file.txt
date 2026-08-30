@@ -2,3 +2,4 @@ file in dir-1
 modify
 modify
 bola bola 
+nano 
