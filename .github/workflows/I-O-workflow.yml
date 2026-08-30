@@ -1,0 +1,19 @@
+name: Input/Output-workflow
+on:
+    workflow_dispatch:
+        inputs:
+            gender:
+              description: "what's your type"
+              required: true
+              default: "male"
+              type: choice
+              options:
+                - male
+                - female
+
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps:
+          - name: first-step
+            run: echo "HI ${{ inputs.gender }}"
