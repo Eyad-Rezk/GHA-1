@@ -1,22 +1,16 @@
 name: 1st-workflow
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "dir-1/**"
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - "dir-1/**"
 
 jobs:
-  job-1:
+  manual-job:
     runs-on: ubuntu-latest
     steps:
-      - name: step-1
-        run: echo "Hello World!"
-
-  job-2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: step-1
-        run: echo "Welcome to the second job!"
-        
+      - name: manual-step-1
+        run: echo "Hello from manual workflow!"
