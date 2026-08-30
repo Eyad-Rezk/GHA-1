@@ -1,0 +1,11 @@
+name: sheduled-workflow
+on:
+    schedule:
+        - cron: "46 9 * * *"
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+       - name: mystep
+         run: echo "HI"
