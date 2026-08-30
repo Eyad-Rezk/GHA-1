@@ -10,10 +10,13 @@ on:
               options:
                 - male
                 - female
+            name:
+                required: true
+                
 
 jobs:
     job-1:
         runs-on: ubuntu-latest
         steps:
           - name: first-step
-            run: echo "HI ${{ inputs.gender }}"
+            run: echo "HI ${{ inputs.gender }} ${{ inputs.name }}"
