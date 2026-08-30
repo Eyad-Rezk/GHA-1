@@ -1,7 +1,7 @@
 name: sheduled-workflow
 on:
     schedule:
-        - cron: "46 9 * * *"
+        - cron: "48 6 * * *"
 
 jobs:
   job-1:
