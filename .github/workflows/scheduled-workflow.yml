@@ -1,11 +1,12 @@
-name: sheduled-workflow
+name: scheduled-workflow
+
 on:
-    schedule:
-        - cron: "48 6 * * *"
+  schedule:
+    - cron: "53 6 * * *"
 
 jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-       - name: mystep
-         run: echo "HI"
+      - name: mystep
+        run: echo "HI"
